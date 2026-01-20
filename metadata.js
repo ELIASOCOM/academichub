@@ -6,8 +6,8 @@ window.metadata = {
     siteInfo: {
         title: "Academic Resource Hub",
         description: "Free study presentations, notes, past papers, lesson plans and syllabi for students and teachers.",
-        contactEmail: "contact@example.com",
-        youtubeChannel: "UC_YOUR_CHANNEL_ID"
+        contactEmail: "ocomelias4@gmail.com",
+        youtubeChannel: "UCGA5CLfO5tvIYYQbUp8CLPw"
     },
 
     // Video Lessons (YouTube) - Use full YouTube URLs
@@ -21,7 +21,7 @@ window.metadata = {
             chapter: "Learning Methods"
         },
         {
-            id: "PkZNo7MFNFg", // Working educational video
+            id: "pqNnejAv0Ow", // Working educational video
             title: "Learn JavaScript - Full Course for Beginners",
             description: "Complete JavaScript programming course for absolute beginners.",
             duration: "3:26:43",
@@ -45,7 +45,7 @@ window.metadata = {
             description: "Comprehensive notes covering algebra, geometry, calculus, and statistics.",
             pages: 45,
             subject: "Mathematics",
-            driveId: "1ABC123DEF456GHI789JKL",
+            driveId: "0Bx2v_cVPUhbCc3RhcnRlcl9maWxl",
             grade: "Grade 11-12",
             fileSize: "4.2 MB",
             lastUpdated: "2024-01-15"
@@ -80,7 +80,7 @@ window.metadata = {
             description: "2023 Physics Paper 2 with practical section.",
             year: "2023",
             subject: "Physics",
-            driveId: "PAPER_ID_PHYSICS_2023_2",
+            driveId: "1OcbEQY7eGi_9BzjmvVRZINZpx_xO9E2R",
             grade: "Grade 12",
             fileSize: "3.5 MB",
             lastUpdated: "2024-01-06",
@@ -141,4 +141,5 @@ window.metadata = {
             grade: "All Levels"
         }
     ]
+
 };
