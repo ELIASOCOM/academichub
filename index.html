@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Resource Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span id="siteTitle">Academic Resource Hub</span>
+                </div>
+                <nav>
+                    <button id="mobileMenuBtn" class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#videos" class="nav-link"><i class="fas fa-play-circle"></i> Videos</a></li>
+                        <li><a href="#notes" class="nav-link"><i class="fas fa-file-pdf"></i> Notes</a></li>
+                        <li><a href="#papers" class="nav-link"><i class="fas fa-file-alt"></i> Past Papers</a></li>
+                        <li><a href="#plans" class="nav-link"><i class="fas fa-calendar-alt"></i> Lesson Plans</a></li>
+                        <li><a href="#schemes" class="nav-link"><i class="fas fa-tasks"></i> Schemes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 id="heroTitle">Academic Resource Hub</h1>
+            <p id="siteDescription">Free educational resources for students and teachers</p>
+            
+            <!-- Search Box -->
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search resources...">
+                <button id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-video stat-icon"></i>
+                    <span class="stat-number" id="videoCount">0</span>
+                    <span class="stat-label">Video Lessons</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-file-pdf stat-icon"></i>
+                    <span class="stat-number" id="notesCount">0</span>
+                    <span class="stat-label">Study Notes</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-file-alt stat-icon"></i>
+                    <span class="stat-number" id="papersCount">0</span>
+                    <span class="stat-label">Past Papers</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar-alt stat-icon"></i>
+                    <span class="stat-number" id="plansCount">0</span>
+                    <span class="stat-label">Lesson Plans</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Lessons Section -->
+    <section id="videos" class="resource-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-video"></i> Video Lessons</h2>
+                <button class="btn btn-outline toggle-resources" data-section="videos">
+                    <i class="fas fa-expand"></i> Show All
+                </button>
+            </div>
+            <div class="video-grid" id="videosGrid">
+                <!-- Videos will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Notes Section -->
+    <section id="notes" class="resource-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-file-pdf"></i> Study Notes</h2>
+                <button class="btn btn-outline toggle-resources" data-section="notes">
+                    <i class="fas fa-expand"></i> Show All
+                </button>
+            </div>
+            <div class="resource-grid" id="notesGrid">
+                <!-- Notes will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Papers Section -->
+    <section id="papers" class="resource-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-file-alt"></i> Past Papers</h2>
+                <button class="btn btn-outline toggle-resources" data-section="papers">
+                    <i class="fas fa-expand"></i> Show All
+                </button>
+            </div>
+            <div class="resource-grid" id="papersGrid">
+                <!-- Past papers will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lesson Plans Section -->
+    <section id="plans" class="resource-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-calendar-alt"></i> Lesson Plans</h2>
+                <button class="btn btn-outline toggle-resources" data-section="plans">
+                    <i class="fas fa-expand"></i> Show All
+                </button>
+            </div>
+            <div class="resource-grid" id="plansGrid">
+                <!-- Lesson plans will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Schemes of Work Section -->
+    <section id="schemes" class="resource-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-tasks"></i> Schemes of Work</h2>
+                <button class="btn btn-outline toggle-resources" data-section="schemes">
+                    <i class="fas fa-expand"></i> Show All
+                </button>
+            </div>
+            <div class="resource-grid" id="schemesGrid">
+                <!-- Schemes will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 id="footerSiteTitle">Academic Resource Hub</h3>
+                    <p id="footerSiteDescription">Free educational resources for students and teachers.</p>
+                    <div class="social-links">
+                        <a href="#" id="youtubeLink" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" id="emailLink" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#videos"><i class="fas fa-chevron-right"></i> Videos</a></li>
+                        <li><a href="#notes"><i class="fas fa-chevron-right"></i> Notes</a></li>
+                        <li><a href="#papers"><i class="fas fa-chevron-right"></i> Past Papers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#plans"><i class="fas fa-chevron-right"></i> Lesson Plans</a></li>
+                        <li><a href="#schemes"><i class="fas fa-chevron-right"></i> Schemes of Work</a></li>
+                        <li><a href="javascript:void(0)" id="backupLink"><i class="fas fa-chevron-right"></i> Backup Data</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> <span id="copyrightName">Academic Resource Hub</span>. All rights reserved.</p>
+                <p class="hosting-info">
+                    <i class="fas fa-server"></i> Static Site - Update by editing metadata.js
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Alerts Container -->
+    <div id="alertContainer"></div>
+
+    <!-- Scripts -->
+    <script src="metadata.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
